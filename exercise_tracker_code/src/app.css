@@ -48,17 +48,18 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 5px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f0f0f0;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: .9em;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #18ba53;
 }
 button:focus,
 button:focus-visible {
@@ -74,6 +75,109 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
+  }
+  button.empty {
+    background-color: none;
   }
 }
+
+.workoutData{
+  border: 5px solid;
+  border-color: #18ba53;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  padding: 10px 50px;
+}
+
+.q {
+  display: inline-block;
+  }
+
+input[type='number']{
+    width: 50px;
+} 
+
+#q5_div{
+  align-self: center;
+}
+
+.text{
+  color:#18ba53;
+  font-size: larger; 
+  font-weight: 500;
+}
+
+#progressGraph{
+  background-color: #ffffff;
+  stroke: black;
+  stroke-width: 5px;
+  fill:none;
+  border: 5px solid;
+  border-color: #18ba53;
+  border-radius: 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+  border: 5px solid;
+  border-color: #18ba53;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  padding: 10px 50px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #18ba53;
+}
+.day {
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day.empty {
+  background-color: none;
+  border: none;
+}
+
+.ofWeeks{
+  font-weight: bold;
+}
+
+.quadLayout{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.quadLayoutItem{
+  padding: 30px;
+}
+
+.ministack{
+  grid-template-rows: auto;
+}
+
+.inlineText{
+  display: inline-block;
+}
+
+.DeleteButton {
+  background-color: red;
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
